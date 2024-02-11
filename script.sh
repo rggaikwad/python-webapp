@@ -1,6 +1,4 @@
-   sudo apt install python3-pip
+sudo apt install python3-pip
 
-   sudo pip install Flask
-
-   sudo pip install xmlrunner
+sudo pip install -r requirements.txt
 
