@@ -17,5 +17,12 @@ pipeline {
         }
       }    
     }
+
+    stage('Docker Build') {
+      steps {
+        sh 'docker build -t pbeniwal/hello:$BUILD_NUMBER .'
+      }
+    }
+
   }
 }
