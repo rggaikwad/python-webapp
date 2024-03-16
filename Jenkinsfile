@@ -19,7 +19,7 @@ pipeline {
     }
     stage('docker') {
       steps {
-        sh 'docker build -t pbeniwal/hello:$BUILD_NUMBER' 
+        sh 'docker build -t pbeniwal/hello:$BUILD_NUMBER .' 
       }
     }
   }
