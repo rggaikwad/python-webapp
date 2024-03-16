@@ -3,6 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
+        sh 'rm -fr test-reports/'
         sh 'pip install -r requirements.txt'
       }
     }
